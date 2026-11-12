@@ -28,16 +28,16 @@ const questions = [
     explanation: "An event listener registers a function to run in response to an event, such as a click, key press, or form submission."
   },
   {
-    id: "quiz-progress-derived-state",
+    id: "html-label-input-association",
     author: "vic2521686226",
-    topic: "Data, Variables, and State",
-    question: "A quiz displays the percentage of questions answered. How can it keep that percentage accurate as the answered count changes?",
+    topic: "HTML form labels",
+    question: 'A form has <label for="email">Email address</label> and <input id="contact" name="email" type="email">. Which change makes clicking the label focus the input while keeping the field’s submission key?',
     choices: [
-      "Calculate the percentage when the quiz starts and reuse that value.",
-      "Store a separate percentage and increase it by one after each answer.",
-      "Calculate (answered count / total questions) × 100 each time the progress display updates."
+      'Change the label to for="contact".',
+      'Change the input to name="contact".',
+      'Add class="email" to the input.'
     ],
-    correctAnswer: 2,
-    explanation: "The percentage is derived from the answered count and the total number of questions. Recalculating it when the display updates uses the latest count. For example, 3 answers out of 4 questions gives 75%."
+    correctAnswer: 0,
+    explanation: "A label’s for attribute must match the input’s id. The name attribute sets the key used when the form is submitted."
   }
 ];
