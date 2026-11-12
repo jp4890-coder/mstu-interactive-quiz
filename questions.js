@@ -26,5 +26,18 @@ const questions = [
     ],
     correctAnswer: 0,
     explanation: "An event listener registers a function to run in response to an event, such as a click, key press, or form submission."
+  },
+  {
+    id: "quiz-progress-derived-state",
+    author: "vic2521686226",
+    topic: "Data, Variables, and State",
+    question: "A quiz displays the percentage of questions answered. How can it keep that percentage accurate as the answered count changes?",
+    choices: [
+      "Calculate the percentage when the quiz starts and reuse that value.",
+      "Store a separate percentage and increase it by one after each answer.",
+      "Calculate (answered count / total questions) × 100 each time the progress display updates."
+    ],
+    correctAnswer: 2,
+    explanation: "The percentage is derived from the answered count and the total number of questions. Recalculating it when the display updates uses the latest count. For example, 3 answers out of 4 questions gives 75%."
   }
 ];
