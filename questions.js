@@ -15,19 +15,6 @@ const questions = [
     explanation: "HTML gives the quiz its structure, CSS controls its appearance, and JavaScript handles behavior such as checking answers when a user submits the form."
   },
   {
-    id: "javascript-event-listener",
-    author: "xy2742-sys",
-    topic: "JavaScript events",
-    question: "When a user clicks a button, what does an event listener do?",
-    choices: [
-      "It waits for the specified event and runs a function when that event occurs.",
-      "It changes the button into a form automatically.",
-      "It prevents the browser from loading any JavaScript on the page."
-    ],
-    correctAnswer: 0,
-    explanation: "An event listener registers a function to run in response to an event, such as a click, key press, or form submission."
-  },
-  {
     id: "html-label-input-association",
     author: "vic2521686226",
     topic: "HTML form labels",
