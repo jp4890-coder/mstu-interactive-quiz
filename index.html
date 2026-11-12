@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Web Fundamentals • MSTU</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="questions.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">MSTU 5003 / 5013 · THE LEARNING LAB</p>
+    <h1>Small questions.<br>Big ideas.</h1>
+    <p>Explore the building blocks of the interactive web.</p></header>
+    <section class="card" aria-label="Interactive Web Fundamentals quiz">
+      <p id="progress" class="eyebrow"></p>
+      <progress id="meter" aria-label="Quiz progress" value="0" max="1"></progress>
+      <form id="quiz-form">
+        <fieldset><legend id="question"></legend><div id="choices"></div></fieldset>
+        <button id="check" type="submit">Check answer</button>
+      </form>
+      <p id="feedback" role="status" aria-live="polite"></p>
+      <button id="next" type="button" hidden>Next question →</button>
+      <button id="restart" type="button" hidden>Try again ↻</button>
+    </section>
+    <footer>Interactive Web Fundamentals · A growing group quiz<br>First-turn starter: teammates will add more questions.</footer>
+  </main>
+</body>
+</html>
